@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         model: "gemma3:1b-it-qat",
         prompt: message + " Answer the question in less than " + maxLength + " words.",
         stream: false
+        temperature: 0.2
       })
     })
       .then(res => res.json())
